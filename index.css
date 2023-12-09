@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1855, #7597de);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo{
+    color: #fff;
+    margin-left: 30px;
+}
+
+header .menu{
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.menu a:hover{
+    color: blueviolet;
+    background-color: white;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #lua{
+    mix-blend-mode: screen;
+}
+
+section #montanha_frente{
+    z-index: 10;
+}
+
+.text{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    right: -350px;
+}
+
+.butao{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+    padding: 8px 30px;
+}
+
+.fim{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.fim h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.fim p{
+    font-size: 1em;
+    color: #fff;
+}
